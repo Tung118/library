@@ -58,7 +58,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['submit']))
       padding-bottom: 2px;
       padding-left:90px;
       padding-right:40px;
-      border-radius:15px;
       width:77.2%;
       color:white;
            }
@@ -68,7 +67,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['submit']))
   margin-right:2%;
   opacity: .9;
   height:320px;
-  background:rgba(0,0,0,0.5);
 }
 .boxtwo{
   background-size: cover;
@@ -76,14 +74,14 @@ if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['submit']))
 }
 .boxtwo input[type="submit"]
        {
-
-    font-size:25px;
-  text-align:center;
+    cursor: pointer;
+    font-size:15px;
+    text-align:center;
+    background: green;
    border:none;
    height:40px;
    margin-left:60% ;
    margin-top: 10px;
-   border-radius:18px;
    }
 
 </style>
@@ -105,7 +103,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['submit']))
     </div>
 
 <form action="" method="post">
-<table align="Right" style="color:white;font-size:13pt">
+<table align="Left" style="color:black;font-size:13pt">
 	  <tr>
 			<td>Họ tên:</td>
  <td ><input type="text" required="required" name="name1" size="17"
@@ -127,13 +125,10 @@ if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['submit']))
 Mật khẩu:</td>
  <td><input type="text" name="password" required="required" size="17"
  maxlength="30" style="color:blue"/>
-</td></tr>
-
- <tr>
-  <td><input type="submit" name="submit"
-   value="Đăng Ký"></td>
-</tr>
+</td>
  </table>
+ <input type="submit" name="submit"
+   value="Đăng Ký">
 </form>
  </fieldset>
 </div>
