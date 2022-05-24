@@ -14,25 +14,13 @@ $ros=mysqli_fetch_array($query1);
 $book_name=$ros['booksname'];
 $auth_name=$ros['authorname'];
 $avl_cpy=$ros['avl_cpy'];
-
-
+$path=$ros['path'];
 if($avl_cpy>0){
 
 
 
 
-if(isset($_POST['sub'])){
-    
-$query="select * from book where `book`.`b_id`= '$id'";
-$query1=mysqli_query($conn,$query);
-$ros=mysqli_fetch_array($query1);
-$path=$ros['path'];
-header('content-Disposition: attachment;filename = '.$id.'');
-header('content-type:application/pdf');
-header('content-length='.filesize($path));
-readfile($path);
 
-}
 
 
 
@@ -158,7 +146,7 @@ nav ul li ul li{
   }
   .boxtwo{
     background-size: cover;
-
+    height: 700px;
   }
 
 .five{
@@ -233,34 +221,33 @@ ul li{
       <li><a href="">Liên hệ</a></li>
     </ul>
   </nav>
+  <?php
+  if($detail==2)
+    		{
+     		?>     
 
-   <div  class="boxtwo" style="border:solid 1px;">
-   <form method="post">
-	<ul >
+        <div  class="boxtwo">
+        <embed src="<?php echo $path ?>" type="application/pdf" style="width: 100%; height: 90%">
+        </div >
+        </div>
+    		<?php
+    		}
+        else{
+          ?>
+          <form method="post">
+          <ul >
 		<li>Tên:  <?php echo $book_name; ?></li>
 	   <li>Tác giả:  <?php echo $auth_name; ?></li>
 	   <li>Số lượng: <?php echo $avl_cpy; ?></li>
 	</ul>
-       
-		<div class="butt">
-			<?php
-    		if($detail==2)
-    		{
-     		?>     
-            <input type="submit" name="sub" value="Tải xuống" style="cursor: pointer;background-color: red;text-align: right"> 
-           
-    		<?php
-    		}
-    		else{
-    		?>
-        	<input type="submit" value="Mượn sách" name="rqst" style="cursor: pointer;background: #f0ad4e">
-          <p style="color: red;font-weight:bold;text-align:center;padding-top:30px"> <?php echo $msg; ?> </p>
-    		<?php
-			}
-			?></div>
-	</form>
-    </div >
-    </div>
+  <div class="butt">
+          <input type="submit" value="Mượn sách" name="rqst" style="cursor: pointer;background: #f0ad4e">
+            <p style="color: red;font-weight:bold;text-align:center;padding-top:30px"> <?php echo $msg; ?> </p>
+          </form>
+        </div>
+          <?php
+        }
+        ?>
 
   </div>
   
