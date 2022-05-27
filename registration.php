@@ -42,7 +42,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['submit']))
 
 <style type="text/css">
 .box{
-  width:74%;
+  width:200px;
   height:165px;
   background-size: cover;
   margin-left: 13%;

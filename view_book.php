@@ -74,6 +74,9 @@ else{
 <head><title>View Book</title>
     
 <style>
+  body{
+    background-image: url(bg2.jpg);
+  }
   *{
     padding 0;
     margin: 0;
@@ -88,7 +91,7 @@ else{
 		height: 40px;
     margin-left: 15%;
     font-size: 20px;
-   
+    
 	}
 	#table2{
 		color: white;
@@ -97,7 +100,7 @@ else{
   nav{
   padding-left:200px;
   display: block;
-  background: red;
+  background: PaleGreen;
   height: 50px;
 }
  nav ul{
@@ -112,7 +115,7 @@ nav ul li{
 }
 nav ul li a{
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 13pt;
   display: block;
 }
@@ -124,11 +127,11 @@ nav ul li ul li{
 }
 	.td1{
 		padding: 1px;
-		background-color: purple;
+		background-color: PaleGreen;
 		
 	}
 	.td1:hover{
-		background: green;
+		background: white;
 	}
 	.td2{
 		padding: 5px;
@@ -142,11 +145,13 @@ nav ul li ul li{
   .box{
     height:160px;
     opacity: .9;
-    background-color: blue;
+    background-color: MediumTurquoise;
+    background-size: cover;
   }
   .boxtwo{
     background-size: cover;
     height: 700px;
+    background-color: white;
   }
 
 .five{
@@ -158,7 +163,7 @@ nav ul li ul li{
   border-radius:12px;
   margin-right: 5%;
   font-size:22px;
-
+  
 
 }
    .five input[type="submit"]
@@ -169,12 +174,11 @@ nav ul li ul li{
 			border:none;
 			height:40px;
 			margin-left:40% ;
-			background:#660000;
-			color:#FFFFFF;
+			background-color: white;
 			}
       .five input[type="submit"]:hover
           {
-            color: blue;
+            color: white;
 		  
 			}
     .td3{
@@ -201,11 +205,10 @@ ul li{
     height: 20px;
     border: 1px solid;
     text-align: center;
-    background-color: red;  
+    background-color: white;  
 }
 </style>
 </head>
-
 <body>
   <div class="container">
   <div class="box">
@@ -234,7 +237,7 @@ ul li{
     		}
         else{
           ?>
-          <form method="post">
+          <form method="post" style="background-color: white">
           <ul >
 		<li>Tên:  <?php echo $book_name; ?></li>
 	   <li>Tác giả:  <?php echo $auth_name; ?></li>

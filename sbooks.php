@@ -18,6 +18,9 @@ if (isset($_GET['id'])){
 <title>book info</title>
 <script type="text/javascript" src="script.js"></script>
 <style>
+  body{
+        background-image: url(bg2.jpg);
+  }
     *{
     padding 0;
     margin: 0;
@@ -29,8 +32,7 @@ if (isset($_GET['id'])){
 .box{
   height:160px;
   background-size: cover;
-  opacity: .9;
-  background-color: blue;
+  background-color: MediumTurquoise;
 }
 .boxtwo{
   background-size: cover;
@@ -54,7 +56,7 @@ ul li{
 }
 ul li a{
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 13pt;
   display: block;
 }
@@ -67,7 +69,7 @@ ul li ul li{
 nav{
   padding-left:200px;
   display: block;
-  background: red;
+  background: PaleGreen;
   height: 50px;
 }
 .but{
@@ -84,7 +86,7 @@ table,tr,td{
     text-align: center;
 }
 a{
-        color: white;
+        color: black;
         text-decoration: none;
 }
 .btn{
@@ -120,7 +122,7 @@ a{
     height: 20px;
     border: 1px solid;
     text-align: center;
-    background-color: red;  
+    background-color: white;  
 }
 </style>
 
@@ -152,7 +154,7 @@ a{
       
       
 
-    <table name="tb" width="100%" border="1"  align="center" style="color:white;  background:rgba(0,0,0,0.38);">
+    <table name="tb" width="100%" border="1"  align="center" style="color:white;  background:SteelBlue;">
       <tr>
         <th height="50">STT</th>
         <th>Tên</th>

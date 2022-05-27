@@ -13,103 +13,99 @@ $namecap=ucwords($name);
 <!DOCTYPE html>
 <html>
 <style>
+  body{
+    background-image: url(bg2.jpg);
+  }
   *{
     padding 0;
     margin: 0;
   }
-.container{
-  width:980px;
-  margin: 0 auto;
-}
-.box{
-  height:160px;
-  background-color: blue;
-  background-size: cover;
+  .container{
+    width:980px;
+    margin: 0 auto;
+  }
+  .box{
+    height:160px;
+    background-color: MediumTurquoise;
+    background-size: cover;
 
-}
-.logout{
-    float: right;
-    margin-right: 20px;
-    width: 90px;
-    height: 20px;
-    border: 1px solid;
-    text-align: center;
-    background-color: red;  
-}
-.boxtwo{
-  background-size: cover;
-   border:solid 1px;
-  
-}
-ul{
-  padding: 0  ;
-  list-style: none;
-}
-ul li{
-  float: left;
-  margin-right: 40px;
-  text-transform: uppercase;
-  line-height: 50px
-}
-ul li a{
-  text-decoration: none;
-  color: white;
-  font-size: 13pt;
-  display: block;
-}
-ul li a:hover{
-  color: black;
-}
-ul li ul li{
-  display: none;
-}
-nav{
-  padding-left:200px;
-  display: block;
-  background: red;
-  height: 50px;
-}
-.box-cnt{
-
-  background:rgba(0,0,0,0.38);
-  overflow: auto;
-  width: 100%;
-  overflow:hidden;
-}
-.box-cnt-h{
-    color:white;
-    text-align: center;
-    padding-top:2px;
-    padding-bottom: 2px;
-    background:#660000;
-}
-
-    .box-table{
-        color: white;
-        text-align: center;
-        border-collapse: collapse;
-        margin:1%;
-        width: 100%;
-    }
-    .box-table td,tr{
-        border: 1px solid white;
-    }
+  }
+  .logout{
+      float: right;
+      margin-right: 20px;
+      width: 90px;
+      height: 20px;
+      border: 1px solid;
+      text-align: center;
+      background-color: white;  
+  }
+  .boxtwo{
+    background-size: cover;
+    border:solid 1px;
     
-    a{
-        color: white;
-        text-decoration: none;
-    }
+  }
+  ul{
+    padding: 0  ;
+    list-style: none;
+  }
+  ul li{
+    float: left;
+    margin-right: 40px;
+    text-transform: uppercase;
+    line-height: 50px
+  }
+  ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13pt;
+    display: block;
+  }
+  ul li a:hover{
+    color: black;
+  }
+  ul li ul li{
+    display: none;
+  }
+  nav{
+    padding-left:200px;
+    display: block;
+    background: PaleGreen;
+    height: 50px;
+  }
+  .box-cnt{
+
+    background: SteelBlue;
+    overflow: auto;
+    width: 100%;
+    overflow:hidden;
+  }
+  .box-cnt-h{
+      color:white;
+      text-align: center;
+      padding-top:2px;
+      padding-bottom: 2px;
+      background: SteelBlue;
+  }
+
+      .box-table{
+          color: white;
+          text-align: center;
+          border-collapse: collapse;
+          margin:1%;
+          width: 100%;
+      }
+      .box-table td,tr{
+          border: 1px solid white;
+      }
+      
+      a{
+          color: white;
+          text-decoration: none;
+      }
     
 
     </style>
-    
-    
-    
-    
-  
-    
-    
-    
+ 
 <head><title>Student_DashBoard</title></head>
 <body>
     <div class="container">
